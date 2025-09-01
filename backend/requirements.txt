@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+youtube-transcript-api
+langchain-google-genai
+langchain-core
+langchain-community
+faiss-cpu
+python-dotenv
