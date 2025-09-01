@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Modern YouTube Q&A Bot Design System */
+
+@layer base {
+  :root {
+    /* Base colors - soft and clean */
+    --background: 250 100% 99%;
+    --foreground: 240 10% 10%;
+
+    /* Card styling */
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 10%;
+
+    /* Popover styling */
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 10%;
+
+    /* Primary - elegant purple */
+    --primary: 262 83% 58%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 262 83% 52%;
+
+    /* Secondary - soft gray */
+    --secondary: 240 5% 96%;
+    --secondary-foreground: 240 6% 10%;
+
+    /* Muted - subtle gray */
+    --muted: 240 5% 96%;
+    --muted-foreground: 240 4% 46%;
+
+    /* Accent - teal accent */
+    --accent: 168 76% 42%;
+    --accent-foreground: 0 0% 100%;
+    --accent-hover: 168 76% 36%;
+
+    /* Destructive - soft red */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Borders and inputs */
+    --border: 240 6% 90%;
+    --input: 240 6% 90%;
+    --ring: 262 83% 58%;
+
+    /* Chat specific colors */
+    --chat-user: 262 83% 58%;
+    --chat-user-foreground: 0 0% 100%;
+    --chat-assistant: 240 5% 96%;
+    --chat-assistant-foreground: 240 10% 10%;
+
+    /* Source card styling */
+    --source-card: 168 76% 96%;
+    --source-card-foreground: 168 76% 20%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(262 83% 58%), hsl(168 76% 42%));
+    --gradient-subtle: linear-gradient(180deg, hsl(250 100% 99%), hsl(240 5% 98%));
+
+    /* Shadows */
+    --shadow-soft: 0 4px 6px -1px hsl(240 5% 50% / 0.1), 0 2px 4px -1px hsl(240 5% 50% / 0.06);
+    --shadow-medium: 0 10px 15px -3px hsl(240 5% 50% / 0.1), 0 4px 6px -2px hsl(240 5% 50% / 0.05);
+    --shadow-large: 0 25px 50px -12px hsl(240 5% 50% / 0.25);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
